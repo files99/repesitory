@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="oz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-param" content="_csrf-myap">
+    <meta name="csrf-token" content="Brcwb-yNONICVFHzoxiU3lJcIVvTUat2SbfeUkNOrf9k3lEg3u9ThmRnYaD2LtXrPzcZFZ18mVt49IsRcDTjnQ==">
+    <title>Единый портал интерактивных государственных услуг</title>
+    
+    <link href="assets/6e2e66ae599ad490ff840ffcc3114baa/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/site.min.css" rel="stylesheet">
+    <link href="css/site_v14.css" rel="stylesheet">
+    <script>var inputmask_fea305f5 = {"mask":"9999"};</script>
+</head>
+<body>
+
+<div class="wrap another_wrap">
+    <nav id="w2" class="navbar-inverse navbar-fixed-top navbar">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w2-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><img src="img/new/logotype.svg"></a>
+        </div>
+        <div id="w2-collapse" class="collapse navbar-collapse">
+            <ul id="w5" class="navbar-nav navbar-right nav">
+                <li><a href="#">Bosh sahifa</a></li>
+                <li class="dropdown lang_part">
+                    <div class="col-xs-8 nopade">
+                        <div class="lang">
+                            <div class="dropdown">
+                                <a href="#" id="a_label" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">oz<span class="caret"></span></a>
+                                <ul id="w4" class="dropdown-menu">
+                                    <li><a href="#" tabindex="-1">Ўзбекча</a></li>
+                                    <li><a href="#" tabindex="-1">O'zbekcha</a></li>
+                                    <li><a href="#" tabindex="-1">Русский</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Kirish</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <nav id="w6" class="navbar-inverse navbar-fixed-top m_mobile navbar">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w6-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><img src="img/logo_mobile.png"></a>
+        </div>
+        <div id="w6-collapse" class="collapse navbar-collapse">
+            <ul id="w7" class="navbar-nav navbar-right nav">
+                <li><a href="#">Bosh sahifa</a></li>
+                <li><a href="#">Kirish</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="container_in">
+            <div class="row dflex_repo_row">
+                <div class="col-md-6 vcenter vcenter_first">
+                    <div id="w0" class="alert-warning alert fade in">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                        Ushbu hujjatdan foydalanish uchun siz avtorizatsiyadan o’tishingiz yoki, PIN kodini kiritishingiz lozim. 
+                        <a href="#">Avtorizatsiyadan o’tish uchun bu yerga bosing</a>
+                    </div>
+                    <h3 class="repo_qr_info">Введите PIN-код для просмотра документа</h3>
+                    
+                    <form id="w1" class="pinForm col-md-6" onsubmit="return handlePinSubmit(event)">
+                        <div class="form-group field-repopinmodel-pin_code required">
+                            <label class="control-label" for="repopinmodel-pin_code">ПИН код</label>
+                            <input type="text" id="repopinmodel-pin_code" class="form-control" name="RepoPinModel[pin_code]" autocomplete="off" aria-required="true" data-plugin-inputmask="inputmask_fea305f5">
+                            <div class="help-block"></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary pull-center">Ochish</button>
+                    </form>
+                    
+                    <h3 class="repo_qr_info qr_blue">PIN-kod hujjatning QR-kodi yonida joylashgan</h3>
+                </div>
+
+                <div class="col-md-6 vcenter">
+                    <img src="img/pin_code_document.jpg" style="margin: 0 auto; display:block;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p class="pull-center">© <a href="http://uzinfocom.uz/" target="_blank">UZINFOCOM</a> 2026</p>
+        <p class="pull-right">Powered by <a href="https://www.yiiframework.com/" rel="external">Yii Framework</a></p>
+    </div>
+</footer>
+
+<style>
+    .navbar-brand img{
+        width: 170px;
+        height: 55px;
+        object-fit: contain;
+        margin-top: 2px;
+    }
+    .lang_part{
+        border-radius: 4px;
+        position: relative;
+        background: #EDF5FF;
+        padding: 6px 8px;
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        width: 58px;
+        padding: 0;
+    }
+    .navbar-nav.navbar-right{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    .navbar-right .dropdown-menu{
+        right: -49px;
+        left: auto;
+        top: 69px;
+    }
+    .lang_part a{
+        width: 100%;
+        display: flex !important;
+        align-content: center;
+        justify-content: center;
+        margin: 0;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1;
+        text-decoration: none;
+        height: 70px;
+        padding-top: 26px;
+    }
+    #a_label{ background: transparent; }
+    .lang_part .col-xs-8{ width: 100%; padding: 0; height: 100%; }
+    .lang_part a span{ margin-top: 5px; }
+    .dropdown-menu a{ margin: 0; height: auto; padding-top: 0; }
+    .has-error .help-block { color: #a94442; }
+</style>
+
+<script src="js/yii_assets/jquery.min.js"></script>
+<script src="js/yii_assets/bootstrap.min.js"></script>
+<script src="js/yii_assets/yii.min.js"></script>
+<script src="assets/fb81aabd70905e1f675928a7cca3f3bc/jquery.inputmask.bundle.js"></script>
+<script src="js/yii_assets/yii.activeForm.min.js"></script>
+
+<script>
+function handlePinSubmit(e) {
+    e.preventDefault();
+    var pinValue = $('#repopinmodel-pin_code').val();
+    var $formGroup = $('.field-repopinmodel-pin_code');
+    var $helpBlock = $formGroup.find('.help-block');
+
+    if (pinValue === '1806') {
+        $formGroup.removeClass('has-error');
+        $helpBlock.text('');
+        
+        var link = document.createElement('a');
+        link.href = 'file.pdf'; 
+        link.download = 'file.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    } else {
+        $formGroup.addClass('has-error');
+        $helpBlock.text('Noto‘g‘ri PIN-kod kiritildi!');
+    }
+    return false;
+}
+
+jQuery(function ($) {
+    jQuery("#repopinmodel-pin_code").inputmask(inputmask_fea305f5);
+    jQuery('#w1').yiiActiveForm([{"id":"repopinmodel-pin_code","name":"pin_code","container":".field-repopinmodel-pin_code","input":"#repopinmodel-pin_code","validate":function (attribute, value, messages, deferred, $form) {
+        yii.validation.required(value, messages, {"message":"«ПИН код» to‘ldirish shart."});
+    }}], []);
+});
+</script>
+
+</body>
+</html>
